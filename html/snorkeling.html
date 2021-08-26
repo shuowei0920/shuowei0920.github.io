@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SNORKELING</title>
+<link rel="stylesheet" href="../css/snorkeling.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/29450e8ffe.js" crossorigin="anonymous"></script>
+</head>
+<body id='backColor'>
+    <div class="topList">
+        <!--目錄欄的div -->
+        <div>
+            <a href="./home.html"><img src='../pic/home/logo.png' style="height: 80px;width: 120px;" ></a>
+        </div>
+        <div class='navbar-inner'>
+            <!-- 目錄欄置中  -->
+            <a href="./sup.html">Sup</a>
+            <a href="./snorkeling.html">浮潛</a>
+            <a href="./yacht.html">遊艇租賃</a>
+            <a href="./rent.html">裝備租賃</a>
+            <a href="./hotel.html">住宿</a>
+            <a href="./album.html">相簿集</a>
+        </div>
+    </div>
+    
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <iframe width="100%" height="400" src="https://www.youtube.com/embed/ev-kgMEkjts" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen ></iframe>
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 3</div>
+          <img src="../pic/snorkeling/snorkeling02.jpg" style="width:100%" height="400">
+          
+        </div>
+        
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="../pic/snorkeling/snorkrling03.png" style="width:100%" height="400">
+          
+        </div>
+        
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        
+        </div>
+        <br>
+        
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span> 
+          <span class="dot" onclick="currentSlide(2)"></span> 
+          <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+<div class='text'>   
+<p>預訂大堡礁（Great Barrier Reef ）三日遊，前往世界上現存規模最大的珊瑚礁群浮潛，與色彩斑斕的熱帶魚一同徜徉大海，
+    幸運的話還有機會看見世界上最大的動物——座頭鯨！專車將從布里斯本或黃金海岸出發，你可以沿途享受昆士蘭美景，
+    並在舒服美麗的度假村、瑪斯庫萊布夫人島，以及精彩的大堡礁水域活動中度過完美的三天兩夜！</p>
+</div>  
+
+<div class='text2' >
+   <h1 style="color: teal;">-行程介紹-</h1> 
+    <table>
+        <tr>
+          <th>時間</th>
+          <th>地點</th>
+          <th>價錢</th>
+        </tr>
+        <tr>
+          <td>0800-0900</td>
+          <td>飯店早餐</td>
+          <td>＄300</td>
+        </tr>
+        <tr>
+          <td>0900-1200</td>
+          <td>大堡礁浮潛</td>
+          <td>＄1500</td>
+        </tr>
+        <tr>
+          <td>1400-1600</td>
+          <td>與鯨鯊共游</td>
+          <td>＄2000</td>
+        </tr>
+      </table>
+      <div class="footer">
+        <div class='footLeft'>
+      
+        <a href="https://www.facebook.com/profile.php?id=100002368723010"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/shuo_wei/"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footRight">
+        <p style="color: white";>聯絡電話：0901110110</p>
+        <p style="color: white";>地址：台中市西屯區</p></div>
+    </div>
+
+
+        <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+        
+        function plusSlides(n) {
+          showSlides(slideIndex += n);
+        }
+        
+        function currentSlide(n) {
+          showSlides(slideIndex = n);
+        }
+        
+        function showSlides(n) {
+          var i;
+          var slides = document.getElementsByClassName("mySlides");
+          var dots = document.getElementsByClassName("dot");
+          if (n > slides.length) {slideIndex = 1}    
+          if (n < 1) {slideIndex = slides.length}
+          for (i = 0; i < slides.length; i++) {
+              slides[i].style.display = "none";  
+          }
+          for (i = 0; i < dots.length; i++) {
+              dots[i].className = dots[i].className.replace(" active", "");
+          }
+          slides[slideIndex-1].style.display = "block";  
+          dots[slideIndex-1].className += " active";
+        }
+        </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>YACHT</title>
+<link rel="stylesheet" href="../css/yacht.css">
+<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+<script src="https://kit.fontawesome.com/29450e8ffe.js" crossorigin="anonymous"></script>
+</head>
+
+<body id='backColor'>
+  <div class="topList">
+    <!--目錄欄的div -->
+    <div>
+      <a href="./home.html"><img src='../pic/home/logo.png' style="height: 80px;width: 120px;" ></a>
+    </div>
+    <div class='navbar-inner'>
+      <!-- 目錄欄置中  -->
+      <a href="./sup.html">Sup</a>
+      <a href="./snorkeling.html">浮潛</a>
+      <a href="./yacht.html">遊艇租賃</a>
+      <a href="./rent.html">裝備租賃</a>
+      <a href="./hotel.html">住宿</a>
+      <a href="./album.html">相簿集</a>
+    </div>
+  </div>
+
+  <div class='row'>
+    <div class='a'>
+      <img src="../pic/yacht/yacht02.jpeg" width="450px" height="300px">
+    </div>
+    <div class='a'>
+      <img src="../pic/yacht/yacht03.jpeg" width="450px" height="300px">
+    </div>
+
+    <div class='a'>
+      <img src="../pic/yacht/yacht04.jpeg" width="450px" height="300px">
+    </div>
+  </div>
+  <p class='topic'>炎炎夏日，無法出國的你，不如來場簡單輕鬆的遊艇輕旅行，簡單無負擔，和朋友一約遠離吵雜都市，踏上遊艇來個沒有負擔的船濳之旅，
+    我們提供遊艇結合（浮潛\sup）多元彈性服務，別在看別人的美照乾瞪眼了，你自己也可以擁有，歡迎來電諮詢。</p>
+
+  <div class="tab">
+    <div class='left'>
+    <button class="tablinks" onclick="openCity(event, 'London')">AC80 雙體船型</button>
+    <button class="tablinks" onclick="openCity(event, 'Paris')">船艙示意圖</button></div>
+    <div class='right'>
+    <button class="tablinks" onclick="openCity(event, 'Tokyo')">E56 開放式飛橋船型</button>
+    <button class="tablinks" onclick="openCity(event, 'Taiwan')">船艙示意圖</button></div>
+  </div>
+
+  <div class="left">
+    <div id="London" class="tabcontent">
+      <img src="../pic/yacht/yacht05.png" alt="" width="600px" height="300px">
+      <p style="color: white;">
+        名稱：AC80 雙體船型<br>
+        容納人數：40 人<br>
+        房數：4 間<br>
+        船長：81 呎<br>
+        設備：超大客廳、交誼廳、KTV
+        水線長：23.06米<br>
+        船寬：8.3米<br>
+        吃水：1.6 米<br>
+        油箱容量：17,600 公升<br>
+        淡水容量：3,600公升<br>
+        排水量：116公噸<br>
+        發動機：Twin MTU 8V2000 M93 1200HP<br>
+        發電機：Twin Onan 27KW (50HZ)<br>
+        全速(滿載)：16 節<br>
+        價錢：請聯絡我們<br>
+        航速(滿載)：13節</p>
+    </div>
+  
+    <div id="Paris" class="tabcontent">
+      <img src="../pic/yacht/yacht06.png" alt="" width="600px" height="800px">
+    </div>
+  </div>
+
+
+  <div class='right'>
+    <div id="Tokyo" class="tabcontent">
+      <img src="../pic/yacht/yacht07.png" alt="" width="600px" height="300px">
+      <p style="color: white;">
+        名稱:E56 開放式飛橋船型<br>
+        容納人數:14 人<br>
+        房數:2 間<br>
+        船長:17.07 米<br>
+        水線長:22.05米<br>
+        船寬:4.8米<br>
+        吃水:1.2 米<br> 
+        油箱容量:2,272公升<br>
+        淡水容量:455公升<br>
+        排水量:25.7公噸<br>
+        發動機:VOLVO IPS600 435HP<br>
+        發電機:Twin ONAN 22.5KW(50HZ)<br>
+        全速(滿載):22 節<br>
+        價錢：請聯絡我們<br>
+        航速(滿載):13節</p>
+    </div>
+    <div id="Taiwan" class="tabcontent">
+      <img src="../pic/yacht/yacht08.png" alt="" width="600px" height="800px">
+    </div>
+  </div>
+
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+  <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+  
+  
+
+  <script>
+    function openCity(evt, cityName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(cityName).style.display = "block";
+      evt.currentTarget.className += " active";
+    }
+  </script>
+
+
+
+<div class="footer">
+  <div class='footLeft'>
+
+  <a href="https://www.facebook.com/profile.php?id=100002368723010"><i class="fa fa-facebook"></i></a>
+  <a href="https://www.instagram.com/shuo_wei/"><i class="fa fa-instagram"></i></a>
+  </div>
+  <div class="footRight">
+  <p style="color: white";>聯絡電話：0901110110</p>
+  <p style="color: white";>地址：台中市西屯區</p></div>
+</div>
+
+</body>
+
+</html>

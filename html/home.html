@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GO TO BEACH</title> 
+    <link rel="stylesheet" href="../css/home.css">
+    <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
+    <script src="https://kit.fontawesome.com/29450e8ffe.js" crossorigin="anonymous"></script>
+</head>
+    
+
+<body id='backColor'>
+
+    <div class="topList">
+        <!--目錄欄的div -->
+        <div>
+            <a href="./home.html"><img src='../pic/home/logo.png' style="height: 80px;width: 120px;" ></a>
+        </div>
+        <div class='navbar-inner'>
+            <!-- 目錄欄置中  -->
+            <a href="./sup.html">Sup</a>
+            <a href="./snorkeling.html">浮潛</a>
+            <a href="./yacht.html">遊艇租賃</a>
+            <a href="./rent.html">裝備租賃</a>
+            <a href="./hotel.html">住宿</a>
+            <a href="./album.html">相簿集</a>
+        </div>
+    </div>
+
+    <!-- Slideshow container -->
+    <div class="slideshow-container">
+
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 3</div>
+            <img src="../pic/home/view01.jpg" style="width:100%;height: 550px;">
+            
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">2 / 3</div>
+            <img src="../pic/home/view02.png" style="width:100%;height: 550px;">
+            
+        </div>
+
+        <div class="mySlides fade">
+            <div class="numbertext">3 / 3</div>
+            <img src="../pic/home/view03.png" style="width:100%;height: 550px;">
+           
+        </div>
+
+        <!-- 點按箭頭 -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    </div>
+    <br>
+
+    <!-- 底部圓形 -->
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <div class="footer">
+        <div class='footLeft'>
+      
+        <a href="https://www.facebook.com/profile.php?id=100002368723010"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.instagram.com/shuo_wei/"><i class="fa fa-instagram"></i></a>
+        </div>
+        <div class="footRight">
+        <p style="color: white";>聯絡電話：0901110110</p>
+        <p style="color: white";>地址：台中市西屯區</p></div>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+</body>
+
+</html>
